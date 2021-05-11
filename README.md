@@ -6,5 +6,9 @@ Initially, the main branch has no files or data,except readme,giattribute,gitign
 ### Preprocessing Branch
 This is the branch made to load data and process it.We load the trainig data to the working directory.Extracting the data file leads to a file size of 166MB.Github has a file size limit of 100MB.So we perform some EDA and feature importance measurements to get a reduce dataset that is still good at predicting results.The reduced dataset is saved as a csv file.Three files(Data Processing.ipynb, application_train.csv.zip, final_train.csv) are created in this branch and then merged into the main branch.
 
+There was no pull requests made to merge this branch with main.It was done in local repository and the files are properly merged in github as well.Eventhough the merge happened properly and all files were pushed to github, github does not show any indication of merge happening.
+
 ### Modelling Branch
 After merging the Preprocessing branch with main branch,we then split the main to a Modelling branch.In this branch,we fit a model to the data and export the model as a pickle file.Two files(Home_Credit_Model.pkl,Model Building & Export.ipynb) are created in this branch and a pull request will be raised.The Readme file has been edited in this branch.
+
+After,the pull request was accepted,the modelling branch merged with main branch.Unlike with preprocessing, github for this branch merge now shows that the merge happened and its safe to delete the branch
