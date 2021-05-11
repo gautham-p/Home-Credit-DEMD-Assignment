@@ -1,2 +1,10 @@
 # Home Credit DEMD Assignment
- 
+Home Credit Default Risk is a financial risk modelling problem.It is a classification problem of whether a customer will default on his credit or not.We will be building a model to predict defaults and then we export this model using a file.Using this exported model, we build and deploy a web application that will accept input parameters.The web app with help of model will prdict the default status.The web app will be bulit using FastAPI as web framework.Docker is used for transporting and deploying the application.The production application will be hosted on the web using GCloud servers.Version Control is maintained using GitHub.
+
+Initially, the main branch has no files or data,except readme,giattribute,gitignore.We make a branch to load data and process it.
+
+### Preprocessing Branch
+This is the branch made to load data and process it.We load the trainig data to the working directory.Extracting the data file leads to a file size of 166MB.Github has a file size limit of 100MB.So we perform some EDA and feature importance measurements to get a reduce dataset that is still good at predicting results.The reduced dataset is saved as a csv file.Three files(Data Processing.ipynb, application_train.csv.zip, final_train.csv) are created in this branch and then merged into the main branch.
+
+### Modelling Branch
+After merging the Preprocessing branch with main branch,we then split the main to a Modelling branch.In this branch,we fit a model to the data and export the model as a pickle file.Two files(Home_Credit_Model.pkl,Model Building & Export.ipynb) are created in this branch and a pull request will be raised.The Readme file has been edited in this branch.
