@@ -20,7 +20,7 @@ The virtual environment must have the same Python version as our notebbok to avo
 
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 
-and then we run the powershell file using command ".\environ.ps1".A virtual environment is set up and activated.Then the required libraries for model is install using file /config/Libraries.txt.
+and then we run the powershell file using command ".\environ.ps1".A virtual environment is set up and activated.The powershell script also installs libraries required for model(/config/Libraries.txt).It also installs libraries needed for Web App as well(uvicorn,fastapi).
 
 ### Building Web App
-The fastapi,uvicorn libraries are installed using pip.The we create a main.py file and make the application run on ip 0.0.0.0 and port 5000.We use Form and POST to get input values for single prediction(/creditcheck) because when we use GET,all the variable values are visible in address bar and we will exposing critical financial information.We also use Form and POST to get a File with multiple inputs so that we perform batch predictions(/bulkcreditcheck).
+We create a main.py file and make the application run on ip 0.0.0.0 and port 5000.We use Form and POST to get input values for single prediction(/creditcheck) because when we use GET,all the variable values are visible in address bar and we will exposing critical financial information.We also use Form and POST to get a File with multiple inputs so that we perform batch predictions(/bulkcreditcheck).
