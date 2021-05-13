@@ -28,3 +28,11 @@ We create a main.py file and make the application run on ip 0.0.0.0 and port 500
 ### Testing Web App
 We use the first 20 rows of X_test table created in Model Building & Export File.Go to the end of file to see testing and verification data.The application is tested using Postman using ip 0.0.0.0:5000.For credit path,we use 16th row of test data to check if api is working.The entire test data is then uploaded as file and test using Body->form-data
 tab of postman.The only issue that occurs is when using a browser.The browsers cannot detect the webapp running at 0.0.0.0.The base route also works when given GET and when run in postman.
+
+## Docker Container
+We freeze pip and get list of packages in requirements file.Then we update the main.py file to run certain commands depending on whether environment is production and make it run on port 5000.
+
+We write and store our Dockerfile in the config folder.In the Dockerfile,we use the tiangolo fastapi image.We set the working directory as /app and copy the pickle,main,requirements file into it.We run the pip command to install all packages in requirements.txt.Then we set the environment to production and then run main.py.
+
+Running power shell script .\docker.ps1 generates the requirements file.It also builds an image using the docker file and names it to home_demd.After that,its runs the image binding the ports 5000:5000.The results were tested using postman.After exiting using Ctrl+C, we must kill the docker container manually.
+
