@@ -18,4 +18,4 @@ The virtual environment must have the same Python version as our notebbok to avo
 
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 
-and then we run the powershell file using command ".environ.ps1"
+and then we run the powershell file using command ".\environ.ps1"
