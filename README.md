@@ -36,3 +36,6 @@ We write and store our Dockerfile in the config folder.In the Dockerfile,we use 
 
 Running power shell script .\docker.ps1 generates the requirements file.It also builds an image using the docker file and names it to home_demd.After that,its runs the image binding the ports 5000:5000.The results were tested using postman.After exiting using Ctrl+C, we must kill the docker container manually.
 
+## AWS Deployment
+Since I did not have any auto-debit option on my debit cards,I was not possible to get activate a Google Cloud account.I tried other cards,but my account was flagged and I was requested to submit a picture of my Debit card for manual approval.The process was taking too long and hence I opted to work with an AWS account.I used the Elastic Container Registry(ECR) to store my image in aws server.ECS(Elastic Container Service) and EC2(Elastic Compute Cloud) were used to deploy the application.The docker image in our local repository was tagged and the pused to ECR.Then using a t2.micro EC2 instance and ECS service,the application was deployed.The webapp was tested using postman and screenshots are present in the aws proof folder.
+
