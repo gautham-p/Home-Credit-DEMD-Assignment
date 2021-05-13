@@ -12,3 +12,6 @@ There was no pull requests made to merge this branch with main.It was done in lo
 After merging the Preprocessing branch with main branch,we then split the main to a Modelling branch.In this branch,we fit a model to the data and export the model as a pickle file.Two files(Home_Credit_Model.pkl,Model Building & Export.ipynb) are created in this branch and a pull request will be raised.The Readme file has been edited in this branch.
 
 After,the pull request was accepted,the modelling branch merged with main branch.Unlike with preprocessing, github for this branch merge now shows that the merge happened and its safe to delete the branch
+
+### WebApp Branch
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
