@@ -24,3 +24,7 @@ and then we run the powershell file using command ".\environ.ps1".A virtual envi
 
 ### Building Web App
 We create a main.py file and make the application run on ip 0.0.0.0 and port 5000.We use Form and POST to get input values for single prediction(/creditcheck) because when we use GET,all the variable values are visible in address bar and we will exposing critical financial information.We also use Form and POST to get a File with multiple inputs so that we perform batch predictions(/bulkcreditcheck).
+
+### Testing Web App
+We use the first 20 rows of X_test table created in Model Building & Export File.Go to the end of file to see testing and verification data.The application is tested using Postman using ip 0.0.0.0:5000.For credit path,we use 16th row of test data to check if api is working.The entire test data is then uploaded as file and test using Body->form-data
+tab of postman.The only issue that occurs is when using a browser.The browsers cannot detect the webapp running at 0.0.0.0.The base route also works when given GET and when run in postman.
