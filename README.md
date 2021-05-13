@@ -14,4 +14,8 @@ After merging the Preprocessing branch with main branch,we then split the main t
 After,the pull request was accepted,the modelling branch merged with main branch.Unlike with preprocessing, github for this branch merge now shows that the merge happened and its safe to delete the branch
 
 ### WebApp Branch
+The virtual environment must have the same Python version as our notebbok to avoid compatibility issues.Hence Model Building & Export was modified to export the python version/path and library versions.We need to install the version found in /config/Python.txt.So we created a powershell script environ.ps1 to load the directory from Python.txt, create a virtual environment and then activate it through shell scripting.Before running the script,the below line must be executed.
+
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+
+and then we run the powershell file using command ".environ.ps1"
