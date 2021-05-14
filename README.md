@@ -1,16 +1,26 @@
 # Home Credit DEMD Assignment
 Home Credit Default Risk is a financial risk modelling problem.It is a classification problem of whether a customer will default on his credit or not.We will be building a model to predict defaults and then we export this model using a file.Using this exported model, we build and deploy a web application that will accept input parameters.The web app with help of model will prdict the default status.The web app will be bulit using FastAPI as web framework.Docker is used for transporting and deploying the application.The production application will be hosted on the web using GCloud servers.Version Control is maintained using GitHub.
 
-Initially, the main branch has no files or data,except readme,giattribute,gitignore.We make a branch to load data and process it.
+Initially, the main branch has no files or data,except readme,giattribute,gitignore.We make a branch to load data and process it.The project data was downloaded for the below URL.
+
+[Home Credit Default Risk](https://www.kaggle.com/c/home-credit-default-risk/data)
 
 Execution Order:
+
 /scripts/Data Processing.ipynb
+
 /scripts/Model Building & Export.ipynb
+
 .\environ.ps1
+
 main.py
+
 .\docker.ps1
+
 aws configure
+
 .\aws.ps1
+
 /aws proof
 
 ## Preprocessing Branch
