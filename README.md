@@ -3,6 +3,16 @@ Home Credit Default Risk is a financial risk modelling problem.It is a classific
 
 Initially, the main branch has no files or data,except readme,giattribute,gitignore.We make a branch to load data and process it.
 
+Execution Order:
+/scripts/Data Processing.ipynb
+/scripts/Model Building & Export.ipynb
+.\environ.ps1
+main.py
+.\docker.ps1
+aws configure
+.\aws.ps1
+/aws proof
+
 ## Preprocessing Branch
 This is the branch made to load data and process it.We load the trainig data to the working directory.Extracting the data file leads to a file size of 166MB.Github has a file size limit of 100MB.So we perform some EDA and feature importance measurements to get a reduce dataset that is still good at predicting results.The reduced dataset is saved as a csv file.Three files(Data Processing.ipynb, application_train.csv.zip, final_train.csv) are created in this branch and then merged into the main branch.
 
